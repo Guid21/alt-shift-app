@@ -10,7 +10,7 @@ export function ApplicationsPageHeader() {
       <Typography variant="heading-lg-semibold">Applications</Typography>
 
       <Link href={PATHS.applications.create} aria-label="Create new application">
-        <Button leftIcon="plus" size="md">
+        <Button leftIcon="plus" size="md" as="span">
           Create<span className={styles.newText}> New</span>
         </Button>
       </Link>

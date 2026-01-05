@@ -32,7 +32,7 @@ export function ApplicationsGoalBanner({
           </Typography>
 
           <Link href={PATHS.applications.create} aria-label="Create new application">
-            <Button leftIcon="plus" size="lg">
+            <Button leftIcon="plus" size="lg" as="span">
               Create New
             </Button>
           </Link>

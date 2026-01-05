@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ElementType } from 'react';
 import classNames from 'classnames';
 
 import styles from './button.module.css';
@@ -21,7 +21,8 @@ const sizeIconMap: Record<ButtonSize | 'iconOnly', IconSize> = {
 
 export type ButtonColor = 'default' | 'danger';
 
-export type ButtonProps = {
+export type ButtonProps<T extends ElementType> = {
+  as?: T;
   variant?: ButtonVariant;
   color?: ButtonColor;
   size?: ButtonSize;
@@ -30,9 +31,10 @@ export type ButtonProps = {
   showText?: boolean;
   children?: React.ReactNode;
   loading?: boolean;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+} & React.ComponentPropsWithoutRef<T>;
 
-export function Button({
+export function Button<T extends ElementType>({
+  as,
   variant = 'primary',
   color = 'default',
   size = 'md',
@@ -44,12 +46,14 @@ export function Button({
   loading,
   disabled,
   ...rest
-}: ButtonProps) {
+}: ButtonProps<T>) {
   const isDisabled = disabled || loading;
   const iconSize = sizeIconMap[showText ? size : 'iconOnly'];
+  const Component = (as || 'button') as ElementType;
+
   return (
-    <button
-      type="button"
+    <Component
+      type={as === 'button' ? 'button' : undefined}
       className={classNames(
         styles.button,
         styles[variant],
@@ -74,18 +78,18 @@ export function Button({
           <Spinner size={iconSize} />
         </span>
       )}
-    </button>
+    </Component>
   );
 }
 
-export type IconButtonProps = Omit<
-  ButtonProps,
+export type IconButtonProps<T extends ElementType> = Omit<
+  ButtonProps<T>,
   'showText' | 'children' | 'leftIcon' | 'rightIcon'
 > & {
   icon: IconName;
   'aria-label': string;
 };
 
-export function IconButton({ icon, ...rest }: IconButtonProps) {
-  return <Button {...rest} leftIcon={icon} showText={false} />;
+export function IconButton<T extends ElementType>({ icon, as, ...rest }: IconButtonProps<T>) {
+  return <Button {...rest} as={as as ElementType} leftIcon={icon} showText={false} />;
 }
