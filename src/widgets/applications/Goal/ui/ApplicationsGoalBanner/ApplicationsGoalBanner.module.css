@@ -1,0 +1,22 @@
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 480px;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-4);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}

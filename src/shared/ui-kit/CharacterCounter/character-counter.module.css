@@ -1,0 +1,7 @@
+.counter {
+  color: var(--text-hint);
+}
+
+.counterExceeded {
+  color: var(--text-error);
+}

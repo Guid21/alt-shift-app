@@ -1,0 +1,8 @@
+.shell {
+  width: min(1120px, calc(100% - 2 * var(--layout-page-inline)));
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--layout-page-stack);
+  padding: var(--layout-page-stack) 0 var(--layout-page-padding-bottom);
+}

@@ -1,0 +1,9 @@
+.divider {
+  --divider-color: var(--base-gray-200);
+  --divider-thickness: 1px;
+
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-top: var(--divider-thickness) solid var(--divider-color);
+}

@@ -1,0 +1,22 @@
+.grid {
+  display: grid;
+  row-gap: var(--spacing-6);
+  column-gap: var(--spacing-4);
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+}
+
+@media (--tablet) {
+  .grid {
+    row-gap: var(--spacing-5);
+    column-gap: var(--spacing-3-5);
+  }
+}
+
+@media (--mobile) {
+  .grid {
+    grid-template-columns: 1fr;
+    row-gap: var(--spacing-4);
+    column-gap: var(--spacing-3);
+  }
+}

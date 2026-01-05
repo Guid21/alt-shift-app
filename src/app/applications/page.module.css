@@ -1,0 +1,17 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+@media (--tablet) {
+  .content {
+    gap: var(--spacing-5);
+  }
+}
+
+@media (--mobile) {
+  .content {
+    gap: var(--spacing-4);
+  }
+}

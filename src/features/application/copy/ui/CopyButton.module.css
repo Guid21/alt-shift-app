@@ -1,0 +1,15 @@
+.copyText {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.copyTrail {
+  display: inline;
+}
+
+@media (--mobile) {
+  .copyTrail {
+    display: none;
+  }
+}

@@ -1,0 +1,135 @@
+/* Typography utilities */
+.text-body,
+.text-text-sm,
+.text-text-sm-medium,
+.text-text-md,
+.text-text-md-semibold,
+.text-text-lg,
+.text-text-lg-semibold,
+.text-heading-md-semibold,
+.text-heading-lg-semibold {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.text-body {
+  font-size: var(--font-size-body);
+  font-family: var(--font-fixel-text), 'Fixel Text', sans-serif;
+  font-weight: 400;
+  line-height: var(--line-height-body);
+}
+
+.text-text-sm {
+  font-size: var(--font-size-text-sm);
+  font-family: var(--font-fixel-text), 'Fixel Text', sans-serif;
+  font-weight: 400;
+  line-height: var(--line-height-text-sm);
+}
+
+.text-text-sm-medium {
+  font-size: var(--font-size-text-sm);
+  font-family: var(--font-fixel-text), 'Fixel Text', sans-serif;
+  font-weight: 500;
+  line-height: var(--line-height-text-sm);
+}
+
+.text-text-md {
+  font-size: var(--font-size-text-md);
+  font-family: var(--font-fixel-text), 'Fixel Text', sans-serif;
+  font-weight: 400;
+  line-height: var(--line-height-text-md);
+}
+
+.text-text-md-semibold {
+  font-size: var(--font-size-text-md);
+  font-family: var(--font-fixel-text), 'Fixel Text', sans-serif;
+  font-weight: 600;
+  line-height: var(--line-height-text-md);
+}
+
+.text-text-lg {
+  font-size: var(--font-size-text-lg);
+  font-family: var(--font-fixel-text), 'Fixel Text', sans-serif;
+  font-weight: 400;
+  line-height: var(--line-height-text-lg);
+}
+
+.text-text-lg-semibold {
+  font-size: var(--font-size-text-lg);
+  font-family: var(--font-fixel-text), 'Fixel Text', sans-serif;
+  font-weight: 600;
+  line-height: var(--line-height-text-lg);
+}
+
+.text-heading-md-semibold {
+  font-size: var(--font-size-heading-md);
+  font-family: var(--font-fixel-display), 'Fixel Display', 'Fixel Text', sans-serif;
+  font-weight: 600;
+  line-height: var(--line-height-heading-md);
+  letter-spacing: var(--letter-spacing-heading-md);
+}
+
+.text-heading-lg-semibold {
+  font-size: var(--font-size-heading-lg);
+  font-family: var(--font-fixel-display), 'Fixel Display', 'Fixel Text', sans-serif;
+  font-weight: 600;
+  line-height: var(--line-height-heading-lg);
+  letter-spacing: var(--letter-spacing-heading-lg);
+}
+
+.text-color-primary {
+  color: var(--text-primary);
+}
+
+.text-color-secondary {
+  color: var(--text-secondary);
+}
+
+.text-color-disabled {
+  color: var(--text-disabled);
+}
+
+.text-color-error {
+  color: var(--text-error);
+}
+
+.text-color-accent {
+  color: var(--text-accent);
+}
+
+.text-color-on-accent {
+  color: var(--text-on-accent);
+}
+
+.text-color-label {
+  color: var(--text-label);
+}
+
+.text-color-hint {
+  color: var(--text-hint);
+}
+
+@media (--tablet) {
+  .text-heading-md-semibold {
+    font-size: var(--font-size-28);
+    line-height: var(--line-height-34);
+  }
+
+  .text-heading-lg-semibold {
+    font-size: var(--font-size-36);
+    line-height: var(--line-height-44);
+  }
+}
+
+@media (--mobile) {
+  .text-heading-md-semibold {
+    font-size: var(--font-size-24);
+    line-height: var(--line-height-28);
+  }
+
+  .text-heading-lg-semibold {
+    font-size: var(--font-size-28);
+    line-height: var(--line-height-34);
+  }
+}

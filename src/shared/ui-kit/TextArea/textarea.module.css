@@ -1,0 +1,7 @@
+.textarea {
+  padding: calc(var(--spacing-3) - var(--input-border-width))
+    calc(var(--spacing-3-5) - var(--input-border-width));
+  resize: vertical;
+  background-clip: padding-box;
+  resize: none;
+}

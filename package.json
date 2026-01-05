@@ -6,19 +6,38 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "format": "prettier --write .",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@hookform/resolvers": "^5.2.2",
+    "classnames": "^2.5.1",
     "next": "16.0.10",
     "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "react-dom": "19.2.1",
+    "react-hook-form": "^7.69.0",
+    "sonner": "^2.0.7",
+    "zod": "^4.2.1",
+    "zustand": "^5.0.9"
   },
   "devDependencies": {
+    "@csstools/postcss-global-data": "^3.1.0",
+    "@storybook/nextjs-vite": "^10.1.10",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.0.10",
-    "typescript": "^5"
-  }
+    "eslint-plugin-storybook": "^10.1.10",
+    "postcss-import": "^16.1.1",
+    "postcss-preset-env": "^10.6.0",
+    "prettier": "^3.3.3",
+    "storybook": "^10.1.10",
+    "typescript": "^5",
+    "vite": "^7.3.0"
+  },
+  "packageManager": "npm@10.9.2"
 }

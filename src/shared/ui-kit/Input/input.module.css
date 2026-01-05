@@ -1,0 +1,5 @@
+.input {
+  padding: calc(var(--spacing-2) - var(--input-border-width))
+    calc(var(--spacing-3) - var(--input-border-width));
+  background-clip: padding-box;
+}

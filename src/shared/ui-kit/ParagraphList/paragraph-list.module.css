@@ -1,0 +1,9 @@
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.paragraph {
+  margin: 0;
+}

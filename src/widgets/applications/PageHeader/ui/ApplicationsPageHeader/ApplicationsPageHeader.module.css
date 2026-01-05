@@ -1,0 +1,14 @@
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: var(--spacing-4);
+  box-shadow: inset 0 -1px 0 0 var(--base-gray-200);
+}
+
+@media (--mobile) {
+  .newText {
+    display: none;
+  }
+}

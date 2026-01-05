@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.textWrapper {
+  position: relative;
+  max-height: 152px;
+  overflow: hidden;
+}
+
+.textWrapper::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0;
+  height: 48px;
+  background: linear-gradient(180deg, rgba(242, 244, 247, 0) 0%, #f2f4f7 100%);
+  pointer-events: none;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
